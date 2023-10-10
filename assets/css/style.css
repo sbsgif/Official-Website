@@ -452,6 +452,7 @@ h6 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 100%;
   text-align: center;
+  border-radius: 25px;
 }
 
 #hero .icon-box i {
@@ -736,6 +737,7 @@ section {
   transition: 0.5s;
   margin-top: 10px;
   border: 2px solid #fff;
+  border-radius: 25px;
   color: #fff;
 }
 
