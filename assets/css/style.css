@@ -671,8 +671,8 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ebebeb;
-  padding: 80px 20px;
+  border: 2px solid #ebebeb;
+  padding: 10px 10px;
   transition: all ease-in-out 0.3s;
   background: #fff;
   border-radius: 25px;
@@ -680,14 +680,16 @@ section {
 
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #fadb0c;
-  border-radius: 4px;
+
+  max-width:80%;
+
+  width: auto;
+  height: auto;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   transition: 0.3s;
 }
 
@@ -1732,3 +1734,22 @@ section {
   background: #0B0B0C;
 }
 
+
+
+.img-services{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.inline-gallery-container {
+  width: 100%;
+
+
+  height: 0;
+  padding-bottom: 65%;
+  height: 350px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
