@@ -4,7 +4,139 @@
 * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
+
+lightGallery(document.getElementById('animated-thumbnails'), {
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500,
+        //licenseKey: 'your_license_key'
+        
+    });
 */
+
+              
+              
+              
+              
+              
+              
+              
+              
+
+    
+
+    const lgContainer = document.getElementById('inline-gallery-container');
+    const inlineGallery = lightGallery(lgContainer, {
+        container: lgContainer,
+        dynamic: true,
+        // Turn off hash plugin in case if you are using it
+        // as we don't want to change the url on slide change
+        hash: false,
+        // Do not allow users to close the gallery
+        closable: false,
+        // Add maximize icon to enlarge the gallery
+        showMaximizeIcon: true,
+        // Append caption inside the slide item
+        // to apply some animation for the captions (Optional)
+        appendSubHtmlTo: '.lg-item',
+        // Delay slide transition to complete captions animations
+        // before navigating to different slides (Optional)
+        // You can find caption animation demo on the captions demo page
+        slideDelay: 400,
+        dynamicEl: [
+            {
+                src: 'assets/img/portfolio/portfolio-1.jpg',
+                thumb: 'assets/img/portfolio/portfolio-1.jpg',
+                subHtml: `<div class="lightGallery-captions">
+                    <h4>Caption 1</h4>
+                    <p>Description of the slide 1</p>
+                </div>`,
+            },
+            {
+                src: 'assets/img/portfolio/portfolio-2^3 (2).jpg',
+                thumb: 'assets/img/portfolio/portfolio-2^3 (2).jpg',
+                subHtml: `<div class="lightGallery-captions">
+                    <h4>Caption 1</h4>
+                    <p>Description of the slide 1</p>
+                </div>`,
+            },
+            {
+                src: 'assets/img/portfolio/webahmeed_1.jpg',
+                thumb: 'assets/img/portfolio/webahmeed_1.jpg',
+                subHtml: `<div class="lightGallery-captions">
+                    <h4>Caption 1</h4>
+                    <p>Description of the slide 1</p>
+                </div>`,
+            },
+            {
+                src: 'https://youtu.be/U4Zx_Wo3meo?si=zFOU8hx5PR-nbd9k',
+                thumb: 'https://youtu.be/U4Zx_Wo3meo?si=zFOU8hx5PR-nbd9k',
+                subHtml: `<div class="lightGallery-captions">
+                    <h4>Caption 1</h4>
+                    <p>Description of the slide 1</p>
+                </div>`,
+            },
+            {
+                src: 'assets/img/portfolio/SRWWE V3.jpg',
+                thumb: 'assets/img/portfolio/SRWWE V3.jpg',
+                subHtml: `<div class="lightGallery-captions">
+                    <h4>Caption 1</h4>
+                    <p>Description of the slide 1</p>
+                </div>`,
+            },
+            {
+                src: 'https://youtu.be/0xLDqTkLyWw?si=VcnqszMMwsjSN2aL',
+                thumb: 'https://youtu.be/0xLDqTkLyWw?si=VcnqszMMwsjSN2aL',
+                subHtml: `<div class="lightGallery-captions">
+                    <h4>Caption 1</h4>
+                    <p>Description of the slide 1</p>
+                </div>`,
+            },
+            {
+                src: 'assets/img/portfolio/POSTER-1.jpg',
+                thumb: 'assets/img/portfolio/POSTER-1.jpg',
+                subHtml: `<div class="lightGallery-captions">
+                    <h4>Caption 1</h4>
+                    <p>Description of the slide 1</p>
+                </div>`,
+            },
+            {
+                src: 'assets/img/portfolio/portfolio-1_4.jpg',
+                thumb: 'assets/img/portfolio/portfolio-1_4.jpg',
+                subHtml: `<div class="lightGallery-captions">
+                    <h4>Caption 1</h4>
+                    <p>Description of the slide 1</p>
+                </div>`,
+            },
+            
+        ],
+    });
+    
+    // Since we are using dynamic mode, we need to programmatically open lightGallery
+    inlineGallery.openGallery();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 (function() {
   "use strict";
 
